@@ -21,8 +21,8 @@ public class PersonnelDirectory
           System.out.println("Welcome to the Personnel Directory Management System");
           System.out.println("====================================================");
 
-          System.out.println("\n\n\t 1. Add Personel");
-          System.out.println("\n\t 2. Find Personel");
+          System.out.println("\n\n\t 1. Add Personnel");
+          System.out.println("\n\t 2. Find Personnel");
           System.out.println("\n\t 3. Print Names");
           System.out.println("\n\t 4. Number of Entries in the Directory");
 
@@ -40,9 +40,9 @@ public class PersonnelDirectory
 			  System.out.println("Enter middle name: ");
 			  middleN = scan.nextLine();
 
-			  System.out.println("Enter empploy id : ");
+			  System.out.println("Enter employee id : ");
 			  empID = scan.nextInt();
-			  System.out.println("Enter base salaey" );
+			  System.out.println("Enter base salary" );
 			  salary = scan.nextDouble();
 			  scan.nextLine();
 
@@ -56,7 +56,7 @@ public class PersonnelDirectory
 
 			  case 2:
 
-			  System.out.println("Enter firts name : ");
+			  System.out.println("Enter first name : ");
 			  firstN = scan.nextLine();
 
 			  System.out.println("Enter last name : ");
