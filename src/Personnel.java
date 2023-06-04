@@ -1,7 +1,11 @@
 import java.util.*;
 public class Personnel {
 
-	public ArrayList<Person> personList;
+	private ArrayList<Person> personList;
+
+	public ArrayList<Person> getPersonList(){
+		return personList;
+	}
 
 	public Personnel() {
 	   personList = new ArrayList<Person>();

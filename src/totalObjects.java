@@ -1,7 +1,7 @@
 public class totalObjects
 {
 
-   private static int numObjects = 0;
+   private int numObjects = 0;
 
    public totalObjects()
    {

@@ -1,7 +1,17 @@
 public class Person {
-	public String last;
-	public String first;
-	public String middle;
+	private String last;
+	private String first;
+	private String middle;
+
+	public String getFirst() {
+		return first;
+	}
+	public String setMiddle(String first) {
+		return middle;
+	}
+	public String getLast() {
+		return last;
+	}
 
 
 	public Person(String last, String first, String middle) {
@@ -31,6 +41,16 @@ public class Person {
 		   	       System.out.println(last + " ," + first + " " + middle);
 
 	       }
+	}
+
+	public void printFirst(){
+		System.out.println(first + "  ");
+	}
+	public void printMiddle(){
+		System.out.println(middle + " ");
+	}
+	public void printLast(){
+		System.out.println(last + " ");
 	}
 
 

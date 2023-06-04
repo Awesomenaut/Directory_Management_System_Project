@@ -66,9 +66,9 @@ public class PersonnelDirectory
 
                                   boolean found = false;
 			  		 			   int loc =-1;
-			  		 			  for(int i =0; i <per.personList.size(); i++)
+			  		 			  for(int i =0; i <per.getPersonList().size(); i++)
 			  		 			  {
-			  		 				if( per.personList.get(i).first.equals(firstN) && per.personList.get(i).last.equals(lastN))
+			  		 				if( per.getPersonList().get(i).getFirst().equals(firstN) && per.getPersonList().get(i).getLast().equals(lastN))
 			  		 				{
 			  		 				found = true;
 			  		 			    loc = i;
@@ -78,13 +78,13 @@ public class PersonnelDirectory
 			  		 			  if(found)
 			  		 			  {
 			  		 				  System.out.println("Found");
-			  		 				  per.personList.get(loc).printName(0);
+			  		 				  per.getPersonList().get(loc).printName(0);
 
 			  		 			  }else
 			  		 			  {
 			  		 				  System.out.println("not found");
 			  		 				  Person p1  = new Person(lastN, firstN, " ");
-			  		 				  per.personList.add(p1);
+			  		 				  per.addPersonnel(p1);
 			  		 				  total.objectAdded();
 			                      }
 
@@ -94,10 +94,10 @@ public class PersonnelDirectory
 
 			  System.out.println("Enter the order 0: first, middle,  last, 1: first, last, middle, 2: last, first , middle ");
 			  int order = scan.nextInt();
-			  for(int i=0; i<per.personList.size(); i++)
+			  for(int i=0; i<per.getPersonList().size(); i++)
 			  {
 
-				  per.personList.get(i).printName(order);
+				  per.getPersonList().get(i).printName(order);
 			  }
 
                break;
