@@ -27,30 +27,26 @@ public class Person {
 
 	   if(order == 0)
 	   {
-	      System.out.println(first + "  " + middle + "  " + last);
+	      printFirst();printMiddle();printLast();System.out.println("");
 
 	   }else if(order == 1)
 	       {
-
-	       System.out.println(last + " ," + middle + " " + first);
-
+			   printLast();printMiddle();printFirst();System.out.println("");
 	       }
 	       else if(order == 2)
 		   	       {
-
-		   	       System.out.println(last + " ," + first + " " + middle);
-
+						  printLast();printFirst();printMiddle();System.out.println("");
 	       }
 	}
 
 	public void printFirst(){
-		System.out.println(first + "  ");
+		System.out.print(first + " ");
 	}
 	public void printMiddle(){
-		System.out.println(middle + " ");
+		System.out.print(middle + " ");
 	}
 	public void printLast(){
-		System.out.println(last + " ");
+		System.out.print(last + " ");
 	}
 
 

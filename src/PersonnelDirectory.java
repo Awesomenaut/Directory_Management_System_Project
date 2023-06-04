@@ -12,6 +12,7 @@ public class PersonnelDirectory
 			  String firstN, lastN, middleN;
 			  int empID;
 			  double salary;
+			  int type;
               int choice = -1;
 
 
@@ -45,9 +46,10 @@ public class PersonnelDirectory
 			  System.out.println("Enter base salary" );
 			  salary = scan.nextDouble();
 			  scan.nextLine();
+			  System.out.println("Enter the Person type: 1-Employee, 2-Executive, 3-Security, 4-Volunteers");
+			  type = scan.nextInt();
 
-			  Employee e1  = new Employee(lastN, firstN, middleN, empID, salary);
-
+			  Person e1 = PersonnelFactory.createPersonnel(lastN, firstN, middleN, empID, salary, type);
 
 			  per.addPersonnel(e1);
 			  total.objectAdded();
@@ -96,7 +98,6 @@ public class PersonnelDirectory
 			  int order = scan.nextInt();
 			  for(int i=0; i<per.getPersonList().size(); i++)
 			  {
-
 				  per.getPersonList().get(i).printName(order);
 			  }
 
